@@ -1,0 +1,17 @@
+{
+  "name": "student-pairs",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.15.3",
+    "express-mustache": "^1.0.3",
+    "lodash": "^4.17.4",
+    "mustache-express": "^1.2.5"
+  }
+}

@@ -1,0 +1,26 @@
+pairs with one left over:
+
+app.get('/', function(req, res) {
+var splitPairs = (students) => {
+  var pairs = []
+  for (var i = 0; i < students.length; i+=2) {
+    if (students[i+1] !== undefined) {
+      pairs.push([students[i], students[i+1]])
+    } else {
+      pairs.push ([students[i]])
+    }
+  }
+  return pairs
+}
+  res.json(splitPairs(_.shuffle(students)))
+});
+
+
+Another way:
+(to fix up)
+
+list = [[a, b], [c]]
+if (list.last.length < grouping)
+extra = list.pop
+list.last.push(extra)
+[[a, b, c]]
